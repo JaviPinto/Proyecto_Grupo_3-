@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulgApp</title>
+    <link rel="stylesheet" href="style/style_venta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#"class="logo">
+            <img src="img/Pulgapplogo.png" alt=""> 
+        </a>
+        <nav>
+            <a href="" class="nav-link">Comprar</a>
+            <a href="" class="nav-link">Vender</a>
+            <a href="" class="nav-link">Intercambiar</a>
+        </nav>  
+        
+        <div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder=" Buscar"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 18px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+        <br>
+
+    </header>  
+    <section class="logo-venta">
+        <img src="img/cambia.png" alt="logo venta"> 
+    </section>
+
+    <section class="form-register">
+        <div>
+            <h2>Información del producto</h2>
+            <label for="tit_producto">Titulo del producto </label>
+            <input class="controls" type="text" name="tit_producto" id="tit_producto"><br />
+
+            <label for="descripcion">Descripción </label>
+            <input class="controls" type="text" name="descripcion" id="descripcion"><br />
+
+            <label for="año_modelo">Año / Modelo </label>
+            <input class="controls" type="number" name="año_modelo" id="año_modelo"><br />
+
+            <label for="precio">Precio </label>
+            <input class="controls" type="number" name="precio" id="precio"><br />
+
+            <label for="cambio">¿Por qué artículo cambiarías? </label>
+            <input class="controls" type="text" name="cambio" id="cambio"><br />
+
+            <input class="botons" type="submit" value="IMAGEN">
+        </div>
+    </section>
+    <section class="form-register">
+        <div>
+            <h2>Información de contacto</h2>
+            <label for="nombre">Nombre </label>
+            <input class="controls" type="text" name="nombre" id="nombre"><br />
+
+            <label for="apellido">Apellido </label>
+            <input class="controls" type="text" name="apellido" id="apellido"><br />
+
+            <label for="t_i">T.I </label>
+            <input class="controls" type="text" name="t_i" id="t_i"><br />
+
+            <label for="numero_contacto">Número de contacto </label>
+            <input class="controls" type="number" name="numero_contacto" id="numero_contacto"><br />
+
+            <label for="ciudad">Ciudad </label>
+            <input class="controls" type="text" name="ciudad" id="ciudad"><br />
+
+        </div>
+    </section>
+    <section>
+        <div>
+            <input class="botons" type="submit" value="PUBLICAR">
+        </div>
+    </section>
+</body>
+</html>
