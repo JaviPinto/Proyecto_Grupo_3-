@@ -14,7 +14,7 @@ body {
     display: flex;
     *justify-content: space-between; /*4. para crear espacio entre el logo y el menu (separa todo lo que este entre el header)*/
     height: 150px;
-    background-color: aqua;
+    background-color: rgba(43, 212, 231, 0.5);
     align-items: center; /*Jaustar contenidos en vertical al medio*/
     padding: 10px;
   }
@@ -100,8 +100,8 @@ section{
 }
 
 .form-register {
-    background-color: aqua;
-    border: aqua;
+    background-color: rgba(43, 212, 231, 0.5);
+
     border-radius: 60px;
 }
 div h2{
@@ -136,3 +136,12 @@ section div label{
     margin-right: 100px;
     box-sizing: border-box;
 }
+
+form  { display: table;      }
+p     { display: table-row;  }
+
+label { display: table-cell; 
+        text-align: start;
+}
+input { display: table-cell; }
+textarea {display: table-cell;}

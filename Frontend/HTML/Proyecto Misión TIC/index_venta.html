@@ -11,13 +11,13 @@
 </head>
 <body>
     <header>
-        <a href="#"class="logo">
+        <a href="index.html"class="logo">
             <img src="img/Pulgapplogo.png" alt=""> 
         </a>
         <nav>
-            <a href="" class="nav-link">Comprar</a>
-            <a href="" class="nav-link">Vender</a>
-            <a href="" class="nav-link">Intercambiar</a>
+            <a href="Index_Compra.html" class="nav-link">Comprar</a>
+            <a href="index_venta.html" class="nav-link">Vender</a>
+            <a href="index_cambia.html" class="nav-link">Intercambiar</a>
         </nav>  
         
         <div class="search">
@@ -42,17 +42,18 @@
     <section class="form-register">
         <div>
             <h2>Información del producto</h2>
-            <label for="tit_producto">Titulo del producto </label>
-            <input class="controls" type="text" name="tit_producto" id="tit_producto"><br />
+            <p><label for="tit_producto">Titulo del producto </label>
+            <input style="width: 300px;" class="controls" type="text" name="tit_producto" id="tit_producto"><br /></p>
 
-            <label for="descripcion">Descripción </label>
-            <input class="controls" type="text" name="descripcion" id="descripcion"><br />
+            <p><label style="vertical-align: top;" for="descripcion">Descripción </label>
+                <textarea rows="3" cols="40">
+                    </textarea></p>
 
-            <label for="año_modelo">Año / Modelo </label>
-            <input class="controls" type="number" name="año_modelo" id="año_modelo"><br />
+            <p><label for="año_modelo">Año / Modelo </label>
+            <input style="width: 60px;" class="controls" type="number" name="año_modelo" id="año_modelo"><br /></p>
 
-            <label for="precio">Precio </label>
-            <input class="controls" type="number" name="precio" id="precio"><br />
+            <p><label for="precio">Precio (COP) </label>
+            <input style="width: 120px;" class="controls" type="number" name="precio" id="precio"><br /></p>
 
             <input class="botons" type="submit" value="IMAGEN">
         </div>
@@ -60,20 +61,20 @@
     <section class="form-register">
         <div>
             <h2>Información de contacto</h2>
-            <label for="nombre">Nombre </label>
-            <input class="controls" type="text" name="nombre" id="nombre"><br />
+            <p><label for="nombre">Nombre </label>
+            <input style="width: 300px;" class="controls" type="text" name="nombre" id="nombre"><br /></p>
 
-            <label for="apellido">Apellido </label>
-            <input class="controls" type="text" name="apellido" id="apellido"><br />
+            <p><label for="apellido">Apellido </label>
+            <input style="width: 300px;" class="controls" type="text" name="apellido" id="apellido"><br /></p>
 
-            <label for="t_i">T.I </label>
-            <input class="controls" type="text" name="t_i" id="t_i"><br />
+            <p><label for="t_i">T.I </label>
+            <input class="controls" type="text" name="t_i" id="t_i"><br /></p>
 
-            <label for="numero_contacto">Número de contacto </label>
-            <input class="controls" type="number" name="numero_contacto" id="numero_contacto"><br />
+            <p><label for="numero_contacto">Número de contacto </label>
+            <input class="controls" type="number" name="numero_contacto" id="numero_contacto"><br /></p>
 
-            <label for="ciudad">Ciudad </label>
-            <input class="controls" type="text" name="ciudad" id="ciudad"><br />
+            <p><label for="ciudad">Ciudad </label>
+            <input class="controls" type="text" name="ciudad" id="ciudad"><br /></p>
 
         </div>
     </section>
