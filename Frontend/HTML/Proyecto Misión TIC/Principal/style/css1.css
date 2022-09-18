@@ -6,7 +6,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 
 }
 
@@ -16,7 +16,7 @@ header {
   display: flex;
   *justify-content: space-between; /*4. para crear espacio entre el logo y el menu (separa todo lo que este entre el header)*/
   height: 150px;
-  background-color: aqua;
+  background-color: rgba(43, 212, 231, 0.5);
   align-items: center; /*Jaustar contenidos en vertical al medio*/
   padding: 10px;
 }
