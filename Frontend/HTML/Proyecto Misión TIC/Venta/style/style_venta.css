@@ -1,150 +1,189 @@
 body {
-    font-family: sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  
-  }
-  
-  
-  /*1. se edita el header con display felx para que el menu se coloque de manera horizontal*/
-  header {
-    display: flex;
-    *justify-content: space-between; /*4. para crear espacio entre el logo y el menu (separa todo lo que este entre el header)*/
-    height: 150px;
-    background-color: rgba(43, 212, 231, 0.5);
-    align-items: center; /*Jaustar contenidos en vertical al medio*/
-    padding: 10px;
-  }
-  
-  /*2. como el logo se encuentra en un div diferente, tambien se hace display flex para quese posicione horizontalmente*/
-  .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-    padding-bottom: 55px;
-  }
-  
-  /*3. se modifica tamaño y posicion de logo*/
-  .logo img {
-    height: 120px;
-    margin-right: 150px; /*distanciar el logo del nav*/
-  }
-  
-  
-  
-  nav a {
-    font-weight: 600;
-    font-size: 35px;
-    padding-right: 120px;  
-  }
-  
-  /*para modificar cuando se le pase el clic por encima */
-  nav a:hover {
-    color: blue;
-  }
-  
-  
-  
-  /*Barra de busqueda*/
-  .search input[type=text]{
-    width:300px;
-    height:45px;
-    border-radius:25px;
-    border: none;
-    font-size: 25px;
-  }
-      
-  .search{
-    float:right;
-    margin:7px;
-  }
-      
-  .search button{
+  font-family: sans-serif;}
+
+/*Edición header*/
+header {
+  display: flex;
+  height: 150px;
+  background-color: #3CBFEF;
+  align-items: center; /*Jaustar contenidos en vertical al medio*/}
+
+.logo {
+  align-items: center;
+  margin-left: 50px;  
+  margin-top: 10px;
+  height: 120px;}
+
+/* Se modifica tamaño del logo*/
+.logo img {
+  height: 120px;}
+
+nav {
+  font-weight: 600; /*Efecto de negrilla (rellenar letra)*/
+  font-size: 35px;  
+  margin-left: 400px;  
+  display: flex;}
+
+a {
+  text-decoration: none;
+  color: white;}
+
+.boton_comprar {
+  padding-top: 25px;
+  padding-right: 150px;}
+
+.boton_vender {
+  padding-top: 25px;}
+
+nav a:hover {
+  color: #003f75;/*modificar color cuando se pasa el mouse porn encima */}
+
+.input-group{
+  margin-top: 30px;
+  margin-left: 300px;}/*Barra de busqueda*/
+
+input {
+  width:250px;
+  height: 40px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;}
+
+.input-group button {
+  width:100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: grey;
+  color: white;
+  font-size: 25px;} 
+
+  .btn_buscar:hover {
+    cursor: pointer;   
     background-color: #0074D9;
-    border-radius: 15px;
-    width: 45px;
-    color: #f2f2f2;
-    float: right;
-    padding: 5px 10px;
-    margin-right: 16px;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    margin-top: 3px;
-  } 
-  /*______________________________________*/
+  }
    
+/*______________________________________________*/
 
-.logo-venta {
-    float: left;
-    *width: 25%;
-    width: fit-content;
-    align-items: center;
-    margin: 40px;
-  }
+.logo_venta-intercambio {
+    float: left;    
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;}
+  
+.form-register{
+  margin-top: 50px;
+  margin-right: 150px;
+  width: 1200PX;
+  float: right;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: #3CBFEF;}
 
-  .logo-venta img {
-    height: 500px;
-    align-items: center;
-  }
-
-section{
-    float: right;
-    width: 60%;
-    padding: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 15px;
-}
-
-.form-register {
-    background-color: rgba(43, 212, 231, 0.5);
-
-    border-radius: 60px;
-}
-div h2{
+.formularios h2{
     background-color: white;
-    padding: 5px;
-    padding-left: 20px;
-    border-radius: 50px;
-    margin-bottom: 30px;
-    margin-top: 0%;
-    width: 370px;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    padding: 10px;    
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-radius: 50px;}
 
-}
-.controls{
-    margin: 5px;
-}
+.nombre_producto {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;}
+.nombre_producto label{  
+  padding-left: 15px;
+  margin-right: 70px;}
 
-div .botons{
+.descripcion {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;}
+.descripcion label{
+  padding-left: 82px;
+  margin-right: 70px;}
+
+.ano_modelo {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;}
+
+.ano_modelo label{
+  padding-left: 70px;
+  margin-right: 70px;}
+
+.precio {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;}
+.precio label{
+  padding-left: 70px;
+  margin-right: 70px;}
+
+.regalar {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 300px;}
+.regalar label{
+  padding-left: 135px;
+  margin-right: -38px;}
+
+.regalar {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 300px;}
+.regalar label{
+  padding-left: 135px;
+  margin-right: -38px;}
+
+.intercambiar {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 0px; 
+  margin-right: 300px;}
+.intercambiar label{
+  padding-left: 80px;
+  margin-right: -40px;}
+
+.porcambio {
+  margin-left: 110px; 
+  margin-bottom: 0px;
+  margin-top: 0px;}
+.porcambio label{ 
+  margin-right: 50px;}
+
+.botonsubir_imagen .botons{
+  cursor: pointer;
+  color: white;
+  float:right;
+  background-color: #0074D9;
+  border: none;
+  border-radius: 50px;    
+  padding: 10px 10px 10px 10px;}
+
+.boton_publicar {
+  margin-top: 50px;
+  margin-right: 150px;
+  float: right;}
+
+.boton_publicar .botons{
     cursor: pointer;
     color: white;
     float:right;
-    background-color: cornflowerblue;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 10px 10px 0px;
-    margin: 0px;
-    width: 150px;
-}
-div .botons:hover{
     background-color: #0074D9;
-}
+    border: none;
+    border-radius: 50px;    
+    padding: 10px 10px 10px 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;}
 
-section div label{
-    margin-right: 100px;
-    box-sizing: border-box;
-}
-
-form  { display: table;      }
-p     { display: table-row;  }
-
-label { display: table-cell; 
-        text-align: start;
-}
-input { display: table-cell; }
-textarea {display: table-cell;}
-
+ .botons:hover{
+  background-color: #003f75;}

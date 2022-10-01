@@ -11,56 +11,74 @@
 </head>
 <body>
     <header>
-        <a href="/Frontend/HTML/Proyecto Misión TIC/Principal/index.html"class="logo">
+        <a href="#"class="logo">
             <img src="img/Pulgapplogo.png" alt=""> 
         </a>
         <nav>
-            <a href="/Frontend/HTML/Proyecto Misión TIC/Compra/Index_Compra.html" class="nav-link">Comprar</a>
-            <a href="index_venta.html" class="nav-link">Vender</a>
-            
-        </nav>  
-        <br>
+            <div class="boton_comprar"><a href="/Frontend/HTML/Proyecto Misión TIC/Compra/Index_Compra.html" class="nav-link">Comprar</a></div>
+            <div class="boton_vender"><a href="/Frontend//HTML/Proyecto Misión TIC/Venta/index_venta.html" class="nav-link">Vender</a> </div>     
+        </nav> 
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="¿Qué buscas?" aria-label="Search" aria-describedby="search-addon" />            
+            <button type="button" class="btn_buscar">Buscar</button>
+          </div>
+    </header>
 
-    </header>  
-    <section class="logo-venta">
-        <img src="img/vencambia.png" alt="logo venta"> 
-    </section>
+<div class="logo_venta-intercambio">
+    <img src="img/vencambia.png" alt="logo venta">
+</div>
 
-    <section class="form-register">
-        <div>
+<section class="form-register">
+    <div class="formularios">
             <h2>Información del producto</h2>
-            <p><label for="tit_producto">Nombre producto </label>
-            <input style="width: 300px;" class="controls" type="text" name="tit_producto" id="tit_producto"><br /></p>
 
-            <p><label style="vertical-align: top;" for="descripcion">Descripción </label>
-                <textarea rows="3" cols="40">
-                    </textarea></p>
+            <div class="nombre_producto">
+                <p><label for="tit_producto">Nombre producto </label>
 
-            <p><label for="año_modelo">Año / Modelo </label>
-            <input style="width: 60px;" class="controls" type="number" name="año_modelo" id="año_modelo"><br /></p>
+                <input style="width: 300px;" class="controls" type="text" name="tit_producto" id="tit_producto"></p>
+            </div>
 
-            <p><label for="precio">Precio (COP) </label>
-            <input style="width: 120px;" class="controls" type="number" name="precio" id="precio"><br /></p>
+            <div class="descripcion">
+                <p><label style="vertical-align: top;" for="descripcion">Descripción </label>
+                <textarea rows="3" cols="40"></textarea></p>
+            </div>
             
+            <div class="ano_modelo">
+                <p><label for="año_modelo">Año / Modelo </label>
+                    <input style="width: 60px;" class="controls" type="number" name="año_modelo" id="año_modelo"></p>
+            </div>  
+            
+            <div class="precio">
+                <p><label for="precio">Precio (COP) </label>
+                    <input style="width: 120px;" class="controls" type="number" name="precio" id="precio"></p>
+            </div>  
 
-            <p><label for="regalar" class="titulos">Regalar </label>
-            <input class="controls" type="checkbox" name="regalar" id="regalar"><br></p>
-                
-            <p><label for="intercambiar">intercambiar </label>
-            <input class="controls" type="checkbox" name="intercambiar" id="intercambiar"><br></p>
-                
-            <p><label for="cambio">¿Por qué artículo cambiarías? </label>
-            <input class="controls" type="text" name="cambio" id="cambio"><br /></p>
+            <div class="regalar">
+                <p><label for="regalar" class="titulos">Regalar </label>
+                    <input class="controls" type="checkbox" name="regalar" id="regalar"></p>
+            </div>
+            
+            <div class="intercambiar">
+                <p><label for="intercambiar">intercambiar </label>
+                    <input class="controls" type="checkbox" name="intercambiar" id="intercambiar"><br></p>
+            </div>
+            
+            <div class="porcambio">
+                <p><label for="cambio">¿Por qué artí-<br>culo cambiarías? </label>
+                    <input class="controls" type="text" name="cambio" id="cambio"><br /></p>          
+            </div> 
 
-
-            <input class="botons" type="submit" value="IMAGEN">
+            <div class="botonsubir_imagen">
+                <input class="botons" type="submit" value="SUBIR IMAGEN  ⏫" >
+            </div> 
         </div>
     </section>
- 
-    <section>
-        <div>
-            <input class="botons" type="submit" value="PUBLICAR">
-        </div>
-    </section>
+
+    <div class="boton_publicar">
+        <input class="botons" type="submit" value="PUBLICAR">
+    </div>    
+
+</section>
+
 </body>
 </html>

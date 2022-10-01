@@ -10,27 +10,29 @@
     
 </head>
 <body>
+
     <header>
         <a href="#"class="logo">
             <img src="img/Pulgapplogo.png" alt=""> 
         </a>
         <nav>
-            <a href="/Frontend/HTML/Proyecto Misión TIC/Compra/Index_Compra.html" class="nav-link">Comprar</a>
-            <a href="/Frontend//HTML/Proyecto Misión TIC/Venta/index_venta.html" class="nav-link">Vender</a>
-            
-        </nav>   
+            <div class="boton_comprar"><a href="/Frontend/HTML/Proyecto Misión TIC/Compra/Index_Compra.html" class="nav-link">Comprar</a></div>
 
+            <div class="boton_vender"><a href="/Frontend//HTML/Proyecto Misión TIC/Venta/index_venta.html" class="nav-link">Vender</a> </div>     
+        </nav> 
+        <div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="¿Qué buscas?" aria-label="Search" aria-describedby="search-addon" />            
+            <button type="button" class="btn_buscar">Buscar</button>
+          </div>
     </header>
 
-    <section id="hero">
-        <div class="banner_superior">
-            <div class="dj-bg">
-                <img src="img/Portada .png" alt="" height="700px">
-                <div class="dj-text">
-                    <h1><b>Intercambia, compra <br>y vende en el mercado <br>de las pulgas virtual</b></h1>
-                    <p>Accede a miles de articulos de diferentes <br>partes del país con un solo clic. </p>                        
-                </div>
-            </div>            
+    <section id="banner">
+        <div class="contenido_banner"> 
+            <div class="texto_banner">
+                <h1>Intercambia, compra y vende en el mercado de las pulgas virtual</h1>
+                <p>Accede a miles de artículos de diferentes partes del país con un solo clic. </p>                        
+            </div>
+            <div class="img_banner"><img src="img/Portada .png" alt="" height="700px"></div>                        
         </div>
     </section>
 
@@ -38,43 +40,27 @@
         <div class="text_descripcion">
             <p>¿Cómo funciona?</p>
             <h1>El mercado de las pulgas web</h1>
-            <h2>PulgApp es una plataforma que te permite <br> intercambiar, comprar y vender con <br>miles de ususarios al alcance de un clic. </h2>
+            <div class="leyenda"><p>PulgApp es una plataforma que te permite <br> intercambiar, comprar y vender con <br>miles de ususarios al alcance de un clic. </p></div>            
         </div>
-    </section>
+        <div class="imagenes">
+            <img src="img/Compra.png" alt="" hspace="" width="" >
+            <img src="img/Vende.png" alt="" hspace="">            
+            <img src="img/intercambia.png" alt="" hspace="">
+        </div>
 
-
-    <section class="ruleta">
-        <div class="imagenes_final">
-
-            
-            
-            
-            <div class="imagenes">
-                <img src="img/Compra.png" alt="150px" hspace="20">
-                <img src="img/Vende.png" alt="150px" hspace="20">
-                <img src="img/intercambia.png" alt="150px" hspace="20">
-
-            </div>
-
-
-            <div class="textos">
+        <div class="textos">
             <div class="texto_img1">
                 <h1>Compra</h1>
-                <p>Consulta miles de <br>artículos y compra <br>el que te guste</p>
-                
+                <p>Consulta miles de <br>artículos y compra <br>el que te guste</p>              
             </div>
-            <div class="texto_img2">
-                <h1>Vende</h1>
-                <p>¿Ya no lo usas? <br> pues vendelo </p>
-            </div>
-            <div class="texto_img3">
-                <h1>intercambia</h1>
-                <p>Necesitas conseguir <br> otra cosa, intercambialo <br> con otro ususario.  </p>
-            </div>
-            </div> 
+        <div class="texto_img2">
+            <h1>Vende</h1>
+            <p>¿Ya no lo usas? <br> pues vendelo </p>
         </div>
-
+        <div class="texto_img3">
+            <h1>intercambia</h1>
+            <p>Necesitas conseguir <br> otra cosa, intercambialo <br> con otro ususario.  </p>
+        </div>     
     </section>     
-
 </body>
 </html>

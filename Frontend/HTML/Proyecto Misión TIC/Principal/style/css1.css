@@ -1,177 +1,127 @@
-
 body {
-  font-family: sans-serif;
-  
-}
+  font-family: sans-serif;}
+
+/*Edición header*/
+header {
+  display: flex;
+  height: 150px;
+  background-color: #3CBFEF;
+  align-items: center; /*Jaustar contenidos en vertical al medio*/}
+
+.logo {
+  align-items: center;
+  margin-left: 50px;  
+  margin-top: 10px;
+  height: 120px;}
+
+/* Se modifica tamaño del logo*/
+.logo img {
+  height: 120px;}
+
+nav {
+  font-weight: 600; /*Efecto de negrilla (rellenar letra)*/
+  font-size: 35px;  
+  margin-left: 400px;  
+  display: flex;}
 
 a {
   text-decoration: none;
-  color: white;
+  color: white;}
 
-}
+.boton_comprar {
+  padding-top: 25px;
+  padding-right: 150px;}
 
+.boton_vender {
+  padding-top: 25px;}
 
-/*1. se edita el header con display felx para que el menu se coloque de manera horizontal*/
-header {
-  display: flex;
-  *justify-content: space-between; /*4. para crear espacio entre el logo y el menu (separa todo lo que este entre el header)*/
-  height: 150px;
-  background-color: rgba(43, 212, 231, 0.5);
-  align-items: center; /*Jaustar contenidos en vertical al medio*/
-  padding: 10px;
-}
-
-/*2. como el logo se encuentra en un div diferente, tambien se hace display flex para quese posicione horizontalmente*/
-.logo {
-  display: flex;
-  align-items: center;
-  padding-left: 25px;
-  padding-bottom: 55px;
-}
-
-/*3. se modifica tamaño y posicion de logo*/
-.logo img {
-  height: 120px;
-  margin-right: 150px; /*distanciar el logo del nav*/
-}
-
-
-
-nav a {
-  font-weight: 600;
-  font-size: 35px;
-  padding-right: 200px;
-  padding-left: 150PX;
-  text-align: center; 
-}
-
-/*para modificar cuando se le pase el clic por encima */
 nav a:hover {
-  color: blue;
-}
+  color: blue;/*modificar color cuando se pasa el mouse porn encima */}
 
+.input-group{
+  margin-top: 30px;
+  margin-left: 300px;}/*Barra de busqueda*/
 
-
-/*Barra de busqueda*/
-.search input[type=text]{
-  width:300px;
-  height:45px;
-  border-radius:25px;
-  border: none;
-  font-size: 25px;
-}
-    
-.search{
-  float:right;
-  margin:7px;
-}
-    
-.search button{
-  background-color: #0074D9;
+input {
+  width:250px;
+  height: 40px;
   border-radius: 15px;
-  width: 45px;
-  color: #f2f2f2;
-  float: right;
-  padding: 5px 10px;
-  margin-right: 16px;
-  font-size: 30px;
-  border: none;
-  cursor: pointer;
-  margin-top: 3px;
-} 
+  text-align: center;
+  font-size: 20px;}
+
+.input-group button {
+  width:100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: grey;
+  color: white;
+  font-size: 25px;}
+
+  .btn_buscar:hover {
+    cursor: pointer;   
+    background-color: #0074D9;
+  }
+
 /*______________________________________*/
  
 /*_____________BANNER SUPERIOR____________*/
-.banner_superior .dj-bg img{
+
+.contenido_banner {
   display: flex;
-  margin-left: 870px;
-}
+  align-items: center;
+  justify-content: space-between;  
+  background-color: #3CBFEF;}
 
-.banner_superior .dj-text{
-  position: absolute;
-  top: 50%; left: 10%;
-  transform: translate(-10%, -50%);
-  text-align: left;
-}
+.contenido_banner img{  
+  margin-right: -85px; /*tuvo que ponerse la diferencia en negativo porque la imagen quedó en png pero no está recortada al límite*/
+  margin-left: 0px;}
 
-.banner_superior .dj-text h1{
+.contenido_banner h1 {
+  margin-right: 0px;
+  margin-left: 150px;
   font-size: 60px;
-}
-.banner_superior .dj-text p{
+  color: white;}
+
+.contenido_banner p {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 150px;
   font-size: 40px;
-}
-   
-/*__________Descripcion final*/
+  color: white;}
+
+/*__________DESCRIPCIÓN FINAL_______________*/
 
 .text_descripcion p{
   margin-top: 75px;
   text-align: center;
-  font-size: 30px;
-  color: aqua;
-}
+  font-size: 40px;
+  color: #3CBFEF;}
 
 .text_descripcion h1{
   text-align: center;
-  font-size: 50px;
-  
-}
+  font-size: 60px;}
 
-.text_descripcion h2{
+.leyenda p{
+  margin-top: 0px;
   text-align: center;
-  font-size: 30px;
-  color: grey;  
-}
-
-/*____Section ruleta_______*/
+  font-size: 40px;
+  color: grey;}
 
 .imagenes {
-  text-align: center;
-}
+  justify-content: space-between;
+  display: flex;
+  margin-right: 450px;
+  margin-left: 450px;}
 
-.texto_img1 {
-  padding-top: 35px;
-  float: left;
-  padding-left: 580px;
-}
-.texto_img1 h1 {
-  font-size: 35px;
-  text-align: center;
-}
-.texto_img1 p {
-  text-align: center;
-  font-size: 25px;
-}
+.textos {
+  justify-content: space-between;
+  display: flex;
+  margin-right: 500px;
+  margin-left: 500px;
+  text-align: center;}
 
-.texto_img2 {
-  position: absolute;
-  padding-top: 35px;
-  padding-left: 900px; 
-}
+.textos h1 {
+  font-size: 40px;}
 
-.texto_img2 h1 {
-  font-size: 35px;
-  text-align: center;
-}
-.texto_img2 p {
-  text-align: center;
-  font-size: 25px;
-}
-  
-.texto_img3 {
-  float: right;
-  padding-right: 520px;
-  padding-top: 35px;
-}
-.texto_img3 h1 {
-  font-size: 35px;
-  text-align: center;
-}
-.texto_img3 p {
-  text-align: center;
-  font-size: 25px;}
-  
-  
-
-  
-  
-
+.textos p {
+  font-size: 30px;}
